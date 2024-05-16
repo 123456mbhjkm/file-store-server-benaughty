@@ -59,13 +59,14 @@ async def start(client, message):
             InlineKeyboardButton('🚀 Release Group', url='https://t.me/+GKaYWepS2wxlZGFl'),
             InlineKeyboardButton('📢 Update Channel', url='https://t.me/benaughtytop')
             ],
-            # [
-            # InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
-            # ]
-            ,[
+        # [
+        # InlineKeyboardButton('🤖 ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴄʟᴏɴᴇ ʙᴏᴛ', callback_data='clone')
+        # ]
+        [
             InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
-        ]]
+        ]
+    ]
         reply_markup = InlineKeyboardMarkup(buttons)
         me2 = (await client.get_me()).mention
         await message.reply_photo(
